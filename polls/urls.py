@@ -1,7 +1,10 @@
 from django.urls import path
 from . import views
 
-# We create the urls.py file
+# Agregamos app_name para diferenciar las vistas entre apps, 
+# es decir si hay una vista con el mismo nombre en diferentes apps
+app_name = 'polls'
+
 urlpatterns = [
      # ex: /polls/
     path('', views.index, name="index"),
